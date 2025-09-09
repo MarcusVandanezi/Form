@@ -2,7 +2,7 @@
 Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 ## Alterações futuras:
- - [ ] Adicionar placeholder
+ - [X] Adicionar placeholder
 
  - [ ] Ajustar CSS(estilização)
 
