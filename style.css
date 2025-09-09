@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid 2px black;
+}
+
+.gender-input {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  /* flex-direction: column; */
+}
