@@ -1,17 +1,19 @@
 # Exercício de conclusão HTML, CSS e JS!
+
 Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 ## Alterações futuras:
- - [X] Adicionar placeholder
 
- - [ ] Ajustar CSS(estilização)
+- [x] Adicionar placeholder
 
- - [ ] Validações
+- [x] Ajustar CSS(estilização)
 
- - [ ] Ajustar CSS(Responsividade)
+- [ ] Validações
 
- - [ ] Usuário aumentar número de "fichas"
- 
- - [ ] Salvar no localStorage/cookies
+- [ ] Ajustar CSS(Responsividade)
 
- - [ ] Aplicar ferramenta para envio de email
+- [ ] Usuário aumentar número de "fichas"
+
+- [ ] Salvar no localStorage/cookies
+
+- [ ] Aplicar ferramenta para envio de email

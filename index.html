@@ -7,30 +7,47 @@
     <title>Formulário de Contato</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <h1>Formulário de contato</h1>
+    </header>
     <main>
       <form action="">
         <label for="name">
           Nome:
-          <input type="text" placeholder="Digite seu nome"/>
+          <input type="text" placeholder="Digite seu nome" />
         </label>
-        <label for="last-name" >
+        <label for="last-name">
           Sobrenome:
-          <input type="text" placeholder="Digite seu sobrenome"/>
+          <input type="text" placeholder="Digite seu sobrenome" />
         </label>
         <label for="gender" class="gender-input">
           Gênero:
-          <input
-            type="radio"
-            id="masc"
-            name="gender_option"
-            value="masculino"
-          />
-          Masculino
-          <input type="radio" id="fem" name="gender_option" value="feminino" />
-          Feminino
-          <input type="radio" id="other" name="gender_option" value="outro" />
-          Outro
+          <div class="div-gender">
+            <input
+              type="radio"
+              id="masc"
+              name="gender_option"
+              value="masculino"
+              class="radio"
+            />
+            Masculino
+            <input
+              type="radio"
+              id="fem"
+              name="gender_option"
+              value="feminino"
+              class="radio"
+            />
+            Feminino
+            <input
+              type="radio"
+              id="other"
+              name="gender_option"
+              value="outro"
+              class="radio"
+            />
+            Outro
+          </div>
         </label>
         <label for="birth">
           Data de nascimento:
@@ -38,11 +55,11 @@
         </label>
         <label for="adress">
           Endereço:
-          <input type="text" placeholder="Ex: rua 'i', numero 3"/>
+          <input type="text" placeholder="Ex: rua 'i', numero 3" />
         </label>
         <label for="city">
           Cidade:
-          <input type="text"placeholder="Digite sua cidade" />
+          <input type="text" placeholder="Digite sua cidade" />
         </label>
         <label for="country">
           País:
@@ -50,18 +67,21 @@
         </label>
         <label for="phone-number">
           Número de telefone:
-          <input type="tel" placeholder="Ex: (55) 32-88888888"/>
+          <input type="tel" placeholder="Ex: (55) 32-88888888" />
         </label>
-        <label for="email" >
+        <label for="email">
           Email:
-          <input type="email" placeholder="email@email.com"/>
+          <input type="email" placeholder="email@email.com" />
         </label>
         <label for="coment">
           Comentário:
-          <input type="text" placeholder="Digite seu comentário aqui!"/>
+          <input type="text" placeholder="Digite seu comentário aqui!" />
         </label>
         <label for="checkbox">
-          Quero receber email de confirmação <input type="checkbox" />
+          <div class="div-checkbox">
+            Quero receber email de confirmação
+            <input type="checkbox" id="checkbox" />
+          </div>
         </label>
       </form>
       <button>Enviar</button>
