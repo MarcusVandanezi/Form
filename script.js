@@ -8,6 +8,9 @@ const phone = document.getElementById('input-phone')
 const email = document.getElementById('input-email')
 const coment = document.getElementById('input-coment')
 const button = document.getElementById('submit-btn');
+const radioMasc = document.getElementById('masc');
+const radioFem = document.getElementById('fem');
+const radioOth = document.getElementById('other');
 // console.log(username);
 // console.log(lastName);
 // console.log(birth);
@@ -17,6 +20,10 @@ const button = document.getElementById('submit-btn');
 // console.log(phone);
 // console.log(email);
 // console.log(coment);
+console.log("radio1",radioMasc.checked);
+console.log("radio2",radioFem.checked);
+console.log("radio3",radioOth.checked);
+// radio lógica de checked, fazer um for ou varios if
 
 
 function setLocalStorage () {
@@ -39,6 +46,14 @@ function emailValidation () {
         setLocalStorage();
     }
 }
+
+// function nameValidation (){
+
+// }
+
+// function validationAll () {
+
+// }
 
 button.addEventListener('click', emailValidation);
 
