@@ -7,6 +7,7 @@ const country = document.getElementById('input-country')
 const phone = document.getElementById('input-phone')
 const email = document.getElementById('input-email')
 const coment = document.getElementById('input-coment')
+const button = document.getElementById('submit-btn');
 // console.log(username);
 // console.log(lastName);
 // console.log(birth);
@@ -16,10 +17,6 @@ const coment = document.getElementById('input-coment')
 // console.log(phone);
 // console.log(email);
 // console.log(coment);
-
-const button = document.getElementById('submit-btn');
-
-
 
 
 function setLocalStorage () {
@@ -35,3 +32,36 @@ function setLocalStorage () {
 }; 
 
 button.addEventListener('click', setLocalStorage);
+
+window.onload = function getStorageData() {
+    const usernameData = localStorage.getItem('usernameKey')
+    const lastNameData = localStorage.getItem('lastNameKey')
+    const birthData = localStorage.getItem('birthKey')
+    const adressData = localStorage.getItem('adressKey')
+    const cityData = localStorage.getItem('cityKey')
+    const countryData = localStorage.getItem('countryKey')
+    const phoneData = localStorage.getItem('phoneKey')
+    const emailData = localStorage.getItem('emailKey')
+    const comentData = localStorage.getItem('comentKey')
+    username.value = usernameData;
+    lastName.value = lastNameData;
+    birth.value = birthData;
+    adress.value = adressData;
+    city.value = cityData;
+    country.value = countryData;
+    phone.value = phoneData;
+    email.value = emailData;
+    coment.value = comentData;
+
+    // console.log(usernameData);
+    // console.log(lastNameData);
+    // console.log(birthData);
+    // console.log(adressData);
+    // console.log(cityData);
+    // console.log(countryData);
+    // console.log(phoneData);
+    // console.log(emailData);
+    // console.log(comentData);
+    
+};
+
