@@ -31,7 +31,16 @@ function setLocalStorage () {
     localStorage.setItem('comentKey', coment.value)
 }; 
 
-button.addEventListener('click', setLocalStorage);
+function emailValidation () {
+    if(!email.value.includes('@')) {
+        alert('E-mail inválido!')
+    } else { 
+        alert('Formulário enviado!')
+        setLocalStorage();
+    }
+}
+
+button.addEventListener('click', emailValidation);
 
 window.onload = function getStorageData() {
     const usernameData = localStorage.getItem('usernameKey')
