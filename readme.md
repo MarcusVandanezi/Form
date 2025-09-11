@@ -14,6 +14,6 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 - [ ] Usuário aumentar número de "fichas"
 
-- [ ] Salvar no localStorage/cookies
+- [X] Salvar no localStorage/cookies
 
 - [ ] Aplicar ferramenta para envio de email
