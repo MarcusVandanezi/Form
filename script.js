@@ -47,6 +47,7 @@ function emailValidation () {
     }
 }
 
+// regex relembrar
 // function nameValidation (){
 
 // }

@@ -4,27 +4,25 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 ## Alterações futuras:
 
-- [x] Adicionar placeholder
-
 - [x] Ajustar CSS(estilização)
 
 - [X] Salvar no localStorage
 
 - [ ] Validações
 
-- [ ] Ajustar CSS(Responsividade)
-
-- [ ] Usuário aumentar número de "fichas"
+- [ ] Section com lógica para exibição
 
 - [ ] Aplicar ferramenta para envio de email
 
-- [ ] Trocar alert por modal 
+- [ ] Implementar cookies (exibir localização)
 
-- [ ] Aprender debuggar
+- [ ] Trocar alert por modal 
 
 - [ ] Aperfeiçoar estilização a partir de um dos templates
 
-- [ ] Implementar cookies (exibir localização)
+- [ ] Ajustar CSS(Responsividade)
+
+- [ ] Exibir mensagem de orientação da resposta davalidação
 
 ### Templates
 
@@ -33,3 +31,7 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 #### Versão 2.0:
  Implementar etapas com "próxima página".
+ Senha com criptografia
+ 
+ 
+ OBS: - Aprender debuggar 
