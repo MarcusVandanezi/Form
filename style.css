@@ -79,3 +79,45 @@ button {
   width: 25px;
   margin-left: 12px;
 }
+
+#name-error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#lastname-error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#adress-error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#city-error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#country-error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#number-error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+#email-error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}

@@ -11,6 +11,19 @@ const button = document.getElementById('submit-btn');
 const radioMasc = document.getElementById('masc');
 const radioFem = document.getElementById('fem');
 const radioOth = document.getElementById('other');
+const nameError = document.getElementById('name-error')
+const lastnameError = document.getElementById('lastname-error')
+const adressError = document.getElementById('adress-error')
+const cityError = document.getElementById('city-error')
+const countryError = document.getElementById('country-error')
+const numberErrror = document.getElementById('number-error')
+const emailError = document.getElementById('email-error')
+// lastnameError
+// adressError
+// cityError
+// countryError
+// numberError
+// emailError
 // console.log(username);
 // console.log(lastName);
 // console.log(birth);
@@ -18,11 +31,10 @@ const radioOth = document.getElementById('other');
 // console.log(city);
 // console.log(country);
 // console.log(phone);
-// console.log(email);
 // console.log(coment);
-console.log("radio1",radioMasc.checked);
-console.log("radio2",radioFem.checked);
-console.log("radio3",radioOth.checked);
+// console.log("radio1",radioMasc.checked);
+// console.log("radio2",radioFem.checked);
+// console.log("radio3",radioOth.checked);
 // radio lógica de checked, fazer um for ou varios if
 
 
@@ -38,24 +50,35 @@ function setLocalStorage () {
     localStorage.setItem('comentKey', coment.value)
 }; 
 
+// function emailValidation () {
+//     if(!email.value.includes('@')) {
+//         alert('E-mail inválido!')
+//     } else { 
+//         alert('Formulário enviado!')
+//         setLocalStorage();
+//     }
+// }
+
+
 function emailValidation () {
-    if(!email.value.includes('@')) {
-        alert('E-mail inválido!')
-    } else { 
-        alert('Formulário enviado!')
-        setLocalStorage();
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+     const baseRegex = /^[a-zA-Z. ]{2,}$/;
+    if(!emailRegex.test(email.value), !baseRegex.test(username.value)) {
+        emailError.style.display = "block"
+        nameError.style.display = "block"
+    } else {
+    alert('Formulário enviado!')
+    emailError.style.display = "none"    
+    setLocalStorage();
     }
 }
 
-// regex relembrar
-// function nameValidation (){
-
-// }
-
-// function validationAll () {
-
-// }
-
+function allRegex () {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const adressRegex = /^[a-zA-Z,0-9. ]{2,}$/;
+    const numberRegex = /^[0-9]{11,}$/
+    // const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
+}
 button.addEventListener('click', emailValidation);
 
 window.onload = function getStorageData() {
@@ -89,4 +112,3 @@ window.onload = function getStorageData() {
     // console.log(comentData);
     
 };
-

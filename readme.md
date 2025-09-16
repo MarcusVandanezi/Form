@@ -22,7 +22,9 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 - [ ] Ajustar CSS(Responsividade)
 
-- [ ] Exibir mensagem de orientação da resposta davalidação
+- [ ] Exibir mensagem de orientação da resposta da validação
+
+- [ ] Exibir máscara no input
 
 ### Templates
 
