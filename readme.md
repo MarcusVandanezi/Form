@@ -8,15 +8,15 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 - [X] Salvar no localStorage
 
-- [ ] Validações
+- [X] Validações
 
-- [ ] Section com lógica para exibição
+- [ ] Trocar alert por modal 
 
 - [ ] Aplicar ferramenta para envio de email
 
 - [ ] Implementar cookies (exibir localização)
 
-- [ ] Trocar alert por modal 
+- [ ] Section com lógica para exibição
 
 - [ ] Aperfeiçoar estilização a partir de um dos templates
 

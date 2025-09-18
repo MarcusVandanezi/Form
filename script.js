@@ -18,26 +18,11 @@ const cityError = document.getElementById('city-error')
 const countryError = document.getElementById('country-error')
 const numberError = document.getElementById('number-error')
 const emailError = document.getElementById('email-error')
-// lastnameError
-// adressError
-// cityError
-// countryError
-// numberError
-// emailError
-// console.log(username);
-// console.log(lastName);
-// console.log(birth);
-// console.log(adress);
-// console.log(city);
-// console.log(country);
-// console.log(phone);
-// console.log(coment);
 
 // console.log("radio1",radioMasc.checked);
 // console.log("radio2",radioFem.checked);
 // console.log("radio3",radioOth.checked);
 // radio lógica de checked, fazer um for ou varios if
-
 
 function setLocalStorage () {
     localStorage.setItem('usernameKey', username.value)
@@ -51,61 +36,76 @@ function setLocalStorage () {
     localStorage.setItem('comentKey', coment.value)
 }; 
 
-// function emailValidation () {
-//     if(!email.value.includes('@')) {
-//         alert('E-mail inválido!')
-//     } else { 
-//         alert('Formulário enviado!')
-//         setLocalStorage();
-//     }
-// }
-
-
-
 function baseRegex() {
+    let isValid = true;
     const baseRegex = /^[a-zA-Z. ]{2,}$/;
-       if(!baseRegex.test(username.value)) {
-        nameError.style.display = "block"
-} else if(!baseRegex.test(lastName.value)) {
-        lastnameError.style.display = "block"
-} else if(!baseRegex.test(city.value)) {
-        cityError.style.display = "block"
-} else if(!baseRegex.test(country.value)) {
-        countryError.style.display = "block"
-}}
-
-
-function emailRegex () {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-       if(!emailRegex.test(email.value)) {
-        emailError.style.display = "block"
-}}
-
-function numberRegex () {
-    const numberRegex = /^[0-9]{11,}$/
-       if(!numberRegex.test(phone.value)) {
-        numberError.style.display = "block"
-}}
-
-function adressRegex () {
+    const numberRegex = /^[0-9]{11,11}$/
     const adressRegex = /^[a-zA-Z,0-9. ]{2,}$/;
-    if(!adressRegex.test(adress.value)) {
-        adressError.style.display = "block"
-}}
 
-function regexValidation () {
-    if(baseRegex()) {
-        alert('Campos inválidos')
+    if (!baseRegex.test(username.value)) {
+        nameError.style.display = "block"; 
+        isValid = false;
     } else {
-    alert('Formulário enviado!')
-    nameError.style.display = "none"
-    lastnameError.style.display = "none"
-    adressError.style.display = "none"
-    cityError.style.display = "none"
-    countryError.style.display = "none"
-    numberError.style.display = "none"
-    emailError.style.display = "none"
-    setLocalStorage();
+        nameError.style.display = "none";
+    }
+
+    if (!baseRegex.test(lastName.value)) {
+        lastnameError.style.display = "block";
+        isValid = false;
+    } else {
+        lastnameError.style.display = "none";
+    }
+
+    if (!baseRegex.test(city.value)) {
+        cityError.style.display = "block";
+        isValid = false;
+    } else {
+        cityError.style.display = "none";
+    }
+
+    if (!baseRegex.test(country.value)) {
+        countryError.style.display = "block";
+        isValid = false;
+
+    } else {
+        countryError.style.display = "none";
+    }
+
+    if (!emailRegex.test(email.value)) {
+        emailError.style.display = "block";
+        isValid = false;
+
+    } else {
+       emailError.style.display = "none";
+    }
+
+    if (!numberRegex.test(phone.value)) {
+        numberError.style.display = "block";
+        isValid = false;
+
+    } else {
+        numberError.style.display = "none";
+    }
+
+    if (!adressRegex.test(adress.value)) {
+        adressError.style.display = "block";
+        isValid = false;
+
+    } else {
+        adressError.style.display = "none";
+    }
+    return isValid;
+}
+function modal () {
+    let validModal = true;
+}
+function regexValidation() {
+    if (!baseRegex()) { 
+        alert('Campos inválidos');
+    } else {
+        alert('Formulário enviado!');
+        setLocalStorage();
     }
 }
 
@@ -130,15 +130,4 @@ window.onload = function getStorageData() {
     phone.value = phoneData;
     email.value = emailData;
     coment.value = comentData;
-
-    // console.log(usernameData);
-    // console.log(lastNameData);
-    // console.log(birthData);
-    // console.log(adressData);
-    // console.log(cityData);
-    // console.log(countryData);
-    // console.log(phoneData);
-    // console.log(emailData);
-    // console.log(comentData);
-    
 };
