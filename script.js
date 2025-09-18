@@ -18,6 +18,7 @@ const cityError = document.getElementById('city-error')
 const countryError = document.getElementById('country-error')
 const numberError = document.getElementById('number-error')
 const emailError = document.getElementById('email-error')
+const modalDiv = document.getElementById('modal')
 
 // console.log("radio1",radioMasc.checked);
 // console.log("radio2",radioFem.checked);
@@ -99,13 +100,14 @@ function baseRegex() {
 }
 function modal () {
     let validModal = true;
+    modalDiv.style.display = 'block';
 }
 function regexValidation() {
     if (!baseRegex()) { 
         alert('Campos inválidos');
     } else {
-        alert('Formulário enviado!');
         setLocalStorage();
+        modal();
     }
 }
 
