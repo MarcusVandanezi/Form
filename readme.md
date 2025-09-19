@@ -6,11 +6,13 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 - [x] Ajustar CSS(estilização)
 
-- [X] Salvar no localStorage
+- [x] Salvar no localStorage
 
-- [X] Validações
+- [x] Validações
 
-- [ ] Trocar alert por modal 
+- [x] Trocar alert por modal
+
+  - Ajustar modal de responder novamente para limpar form e ajustar botão do form de erro para um "X"
 
 - [ ] Aplicar ferramenta para envio de email
 
@@ -32,8 +34,8 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 - https://codepen.io/gil411e8085ef/pen/yaZNqe
 
 #### Versão 2.0:
- Implementar etapas com "próxima página".
- Senha com criptografia
- 
- 
- OBS: - Aprender debuggar 
+
+Implementar etapas com "próxima página".
+Senha com criptografia
+
+OBS: - Aprender debuggar

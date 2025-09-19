@@ -13,60 +13,58 @@
     <main>
       <div id="modal">
         <div id="modal-p">
-          <p>Formulário enviado!</p>
+          <p id="modal-text"></p>
           <button id="modal-button">Responder novamente</button>
         </div>
       </div>
       <form action="">
-        <label for="name" >
+        <label for="name">
           Nome:
           <input type="text" placeholder="Digite seu nome" id="input-name" />
           <span id="name-error">Nome inválido!</span>
         </label>
-        <label for="last-name" >
+        <label for="last-name">
           Sobrenome:
-          <input type="text" placeholder="Digite seu sobrenome"  id="input-lastname"/>
+          <input
+            type="text"
+            placeholder="Digite seu sobrenome"
+            id="input-lastname"
+          />
           <span id="lastname-error">Sobrenome inválido!</span>
         </label>
-        <label for="gender" class="gender-input" >
+        <label for="gender" class="gender-input">
           Gênero:
-          <div class="div-gender" >
+          <div class="div-gender">
             <input
               type="radio"
               id="masc"
-              name="gender_option"          
-              class="radio" 
+              name="gender_option"
+              class="radio"
               checked
             />
             <label for="masc">Masculino</label>
-            <input
-              type="radio"
-              id="fem"
-              name="gender_option"
-              class="radio"
-            />
+            <input type="radio" id="fem" name="gender_option" class="radio" />
             <label for="fem">Feminino</label>
-            <input
-              type="radio"
-              id="other"
-              name="gender_option"
-              class="radio"
-            />
+            <input type="radio" id="other" name="gender_option" class="radio" />
             <label for="other">Outro</label>
           </div>
         </label>
         <label for="birth">
           Data de nascimento:
-          <input type="date" id="input-birth"/>
+          <input type="date" id="input-birth" />
         </label>
         <label for="adress">
           Endereço:
-          <input type="text" placeholder="Ex: rua 'i', numero 3" id="input-adress"/>
+          <input
+            type="text"
+            placeholder="Ex: rua 'i', numero 3"
+            id="input-adress"
+          />
           <span id="adress-error">Endereço inválido</span>
         </label>
         <label for="city">
           Cidade:
-          <input type="text" placeholder="Digite sua cidade" id="input-city"/>
+          <input type="text" placeholder="Digite sua cidade" id="input-city" />
           <span id="city-error">Cidade inválida</span>
         </label>
         <label for="country">
@@ -76,7 +74,11 @@
         </label>
         <label for="phone-number">
           Número de telefone:
-          <input type="tel" placeholder="Ex: (55) 32-88888888" id="input-phone" />
+          <input
+            type="tel"
+            placeholder="Ex: (55) 32-88888888"
+            id="input-phone"
+          />
           <span id="number-error">Número inválido</span>
         </label>
         <label for="email">
@@ -86,7 +88,11 @@
         </label>
         <label for="coment">
           Comentário:
-          <input type="text" placeholder="Digite seu comentário aqui!"  id="input-coment"/>
+          <input
+            type="text"
+            placeholder="Digite seu comentário aqui!"
+            id="input-coment"
+          />
         </label>
         <label for="checkbox">
           <div class="div-checkbox">
