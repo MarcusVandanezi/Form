@@ -102,7 +102,22 @@ function closeModal() {
   modalDiv.style.display = "none";
 }
 
-modalButton.addEventListener("click", closeModal);
+modalButton.addEventListener("click", function(){
+  if(modalP.style.backgroundColor === "green") {
+    closeModal ()
+    username.value = ""
+    lastName.value = ""
+    birth.value = ""
+    adress.value = ""
+    city.value = ""
+    country.value = ""
+    phone.value = ""
+    email.value = ""
+    coment.value = ""
+  } else {
+    closeModal();
+  }
+});
 
 function modalValid() {
   modalDiv.style.display = "block";

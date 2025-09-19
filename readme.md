@@ -12,8 +12,6 @@ Formulário de contato utilizando todos os fundamentos aprendidos até agora!
 
 - [x] Trocar alert por modal
 
-  - Ajustar modal de responder novamente para limpar form e ajustar botão do form de erro para um "X"
-
 - [ ] Aplicar ferramenta para envio de email
 
 - [ ] Implementar cookies (exibir localização)
