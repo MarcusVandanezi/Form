@@ -27,6 +27,12 @@ const modalButton = document.getElementById("modal-button");
 // console.log("radio2",radioFem.checked);
 // console.log("radio3",radioOth.checked);
 // radio lógica de checked, fazer um for ou varios if
+ function emailJS () {
+  emailjs.init({
+  publicKey: "EcPxMoK3b14pmmq5Y",
+  })};
+
+
 
 function setLocalStorage() {
   localStorage.setItem("usernameKey", username.value);
